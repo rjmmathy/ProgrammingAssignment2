@@ -1,4 +1,5 @@
-makeCacheMatrix <- function(x = matrix()) {
+makeCacheMatrix <- function(x = matrix())
+ {
     i <- NULL
     set <- function(y) {
         x <<- y
@@ -14,7 +15,9 @@ makeCacheMatrix <- function(x = matrix()) {
         getinverse = getinverse)
 }
 
-cacheSolve <- function(x, ...) {
+
+cacheSolve <- function(x, ...) 
+{
     i <- x$getinverse()
     if(!is.null(i)) {
         message("loading cached data")
